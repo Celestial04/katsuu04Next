@@ -1,4 +1,4 @@
-name: Deploy PHP
+name: Deploy
 
 on:
   push:
@@ -9,26 +9,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le code
+      - name: Get code
         uses: actions/checkout@v4
 
-      - name: Installer PHP et Composer
+      - name: Install PHP & Composer
         uses: shivammathur/setup-php@v2
         with:
           php-version: "8.3"
           tools: composer
 
-      - name: Installer les dépendances
+      - name: Dependencies
         run: composer install --no-dev --optimize-autoloader
 
-      - name: Configurer SSH
+      - name: SSH config
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-      - name: Déployer
+      - name: Final step
         run: |
           rsync -az --delete \
             --exclude=".git" \

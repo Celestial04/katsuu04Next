@@ -1,0 +1,15 @@
+{
+    "name": "celeste/katsuu04next",
+    "autoload": {
+        "psr-4": {
+            "Celeste\\Katsuu04next\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Céleste",
+            "email": "clst04@proton.me"
+        }
+    ],
+    "require": {}
+}
