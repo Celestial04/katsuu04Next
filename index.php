@@ -1,1 +1,1 @@
-<?php echo("It works!") ?>
+<?php echo("It works!");require __DIR__ . '/vendor/autoload.php';?>
