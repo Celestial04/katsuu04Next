@@ -1,8 +1,9 @@
 {
-    "name": "celeste/katsuu04next",
+    "name": "clst/katsuu04next",
+    "type": "project",
     "autoload": {
         "psr-4": {
-            "Celeste\\Katsuu04next\\": "src/"
+            "Clst\\Katsuu04next\\": "src/"
         }
     },
     "authors": [
