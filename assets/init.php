@@ -18,5 +18,5 @@ if (in_array($lang, $langs)) {
 }
 
 //---------- DB Connection..
-$dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
-    or die('Connexion impossible.');
+// $dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
+//     or die('Connexion impossible.');
