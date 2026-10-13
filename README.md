@@ -1,5 +1,5 @@
-# katsuu04Next
-Next version of my website
+> [!NOTE]
+> This project as not for goal to be self-hostable, because it's my website, so it's my main setup to build this, and I will not simplify the setup.
 
 ## Why
 I have two version of this website, because this is more convenient for me to train into Javascript and PHP.
