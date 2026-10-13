@@ -9,5 +9,4 @@ For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
-3. Go to Run and Debug tab.
-4. And Start debugging.
+3. Press F5.
