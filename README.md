@@ -19,8 +19,8 @@ For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
-3. ???
-4. ???
+3. Duplicate/rename the `example.env` to `.env`.
+4. Set all the variables in `.env` file.
 5. ???
 6. ???
 7. Press F5.
