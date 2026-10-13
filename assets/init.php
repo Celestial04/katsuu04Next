@@ -17,21 +17,6 @@ if (in_array($lang, $langs)) {
     $_ = require_once __DIR__ . "/i18n/en.php";
 }
 
-// languages selectable
-// if (!isset($_COOKIE['lang'])) {
-//     if (in_array($lang, $langs)) {
-//         $_ = require_once __DIR__ . "/i18n/{$lang}.php";
-//     } else {
-//         if (in_array($lang, $langs)) {
-//             $_ = require_once __DIR__ . "/i18n/{$lang}.php";
-//         } else {
-//             $_ = require_once __DIR__ . "/i18n/en.php";
-//         }
-//     }
-// } else {
-//     if (in_array($cooklang, $langs)) {
-//         $_ = require_once __DIR__ . "/i18n/{$cooklang}.php";
-//     } else {
-//         $_ = require_once __DIR__ . "/i18n/en.php";
-//     }
-// } ?>
+//---------- DB Connection..
+$dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
+    or die('Connexion impossible.');
